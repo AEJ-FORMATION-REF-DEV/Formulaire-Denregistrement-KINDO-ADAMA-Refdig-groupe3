@@ -1,0 +1,245 @@
+
+body{
+    background-color: rgb(214, 203, 141);
+}
+h1{
+    text-align: center;
+    text-decoration-line: underline;
+    color: rgb(10, 163, 10);
+}
+
+/* Bloc Design sur le formulaire */
+
+/*couleur background du formulaire*/
+.couleur-formulaire{
+    background-color: rgb(131, 148, 147);
+}
+ 
+/*
+forme et mise en place de la section*/
+section{
+     
+    width:  30%;
+    display: flex; 
+    justify-content: center;
+    margin: 10px auto;
+    box-shadow: 0px 0px 10px #bbb;
+    background-color: rgb(226, 207, 146);
+    border-radius: 3em;
+   
+} 
+
+
+/*
+ effet sur les champs du formulaire, largeur, forme
+*/
+form select{
+
+    width: 80%;
+    margin-bottom: 3px;
+    border-radius: 2em;
+    padding: 10px;
+    color: #333;
+    border: 1px solid #ccc;
+    outline: 0; /* Empêche le surlignement au focus */
+}
+
+form input[type="number"], 
+form input[type="text"], 
+form input[type="tel"],
+form input[type="email"],
+form .bouton[type="submit"] {
+
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 2em;
+    padding: 13px;
+    color: #333;
+    border: 1px solid #ccc;
+    outline: 0; /* Empêche le surlignement au focus */
+}
+
+/*
+    Au focus des champs de saisie,
+    on change la couleur d’arrière-plan.
+*/
+form input[type="text"]:focus,
+form input[type="number"]:focus,  
+form input[type="tel"]:focus,
+form input[type="email"]:focus{
+    background-color: #ccc;
+}
+
+/*
+    Mises-en forme du bouton pour l’envoi du formulaire.
+*/
+ .bouton{
+    font-weight: bold;
+    color: #eee;
+    text-transform: uppercase;
+    background-color: #e67e22;
+}
+
+/*
+Effet au survol du bouton
+*/
+
+.bouton:hover{
+    background-color: yellowgreen;
+}
+
+/*bouton afficher liste*/
+.bton{
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 2em;
+    padding: 13px;
+    background-color: cadetblue;
+   
+}
+
+.bton:hover{
+    background-color: burlywood;
+}
+
+/*bouton aller au formulaire*/
+.btton{
+    width: 20%;
+    margin-bottom: 5px;
+    margin-left: 40%;
+    border-radius: 2em;
+    padding: 12px;
+    background-color: cadetblue;
+}
+
+.btton:hover{
+    background-color: burlywood;
+}
+  
+
+/*marge entre les champs*/
+.espace {
+    margin-bottom: 0.5em;
+  
+  }
+
+
+  /* Bloc Design sur le tableau de liste */
+
+
+ .table{
+
+    margin-left: 18%;
+    color: #fff;
+    background-color: #343a40;
+ }
+ 
+ .table td {
+    padding: 0.75em;
+    border-top: 1px solid #dee2e6;
+    
+  }
+
+  /* forme et couleur des td*/
+  .correspondance{
+    color: cornflowerblue;
+    font-weight: 600;
+    background-color: rgba(99, 221, 88, 0.473);
+  }
+
+  /*effet au survol des elements de la liste*/
+  .effet:hover{
+      background-color: rgb(17, 151, 73);
+  }
+
+  /*effet au survol des liens*/
+  .lien:hover{
+      background-color: rgba(99, 221, 88, 0.473);
+     
+  }
+
+  /*position des liens de redirection*/
+  .liens{
+    text-align: center;
+    padding: 1em;
+  }
+
+/* 
+ RESPONSIVE */
+ 
+@media all and (min-device-width: 280px) and (max-device-width: 540px){
+
+    section{
+        width: 80%;
+        text-align: center;
+    }
+
+    form input[type="number"], 
+    form input[type="text"], 
+    form input[type="tel"],
+    form input[type="email"],
+    form .bouton[type="submit"] {
+    
+    width: 80%;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    padding: 13px;
+   
+}
+.bton{
+    width: 80%;
+}
+
+.btton{
+    width: 90%;
+    margin-bottom: 5px;
+    margin-left: auto;
+   
+}
+}
+
+
+@media all and (min-device-width: 600px) and (max-device-width: 1300px){
+
+    section{
+        width: 80%;
+        text-align: center;
+    }
+    form select,
+    form input[type="number"], 
+    form input[type="text"], 
+    form input[type="tel"],
+    form input[type="email"],
+    form .bouton[type="submit"] {
+    
+    width: 80%;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    padding: 15px;
+   
+}
+
+form label{
+
+    font-size: 2em;
+}
+
+h1{
+    font-size: 2em;
+}
+
+form .bouton{
+    background-color: green;
+    
+}
+
+.btton{
+    width: 40%;
+    margin-bottom: 5px;
+    margin-left: auto;
+   
+}
+
+
+}
+
